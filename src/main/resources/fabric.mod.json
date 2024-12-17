@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eighthfabricmod",
+	"version": "${version}",
+	"name": "Eighth Fabric Mod",
+	"description": "PremixedAxis's eighth fabric mod",
+	"authors": [
+		"PremixedAxis"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/eighthfabricmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.premixedaxis.eighthfabricmod.EighthFabricMod"
+		],
+		"fabric-datagen": [
+			"net.premixedaxis.eighthfabricmod.EighthFabricModDataGenerator"
+		],
+		"client": [
+			"net.premixedaxis.eighthfabricmod.EighthFabricModClient"
+		]
+	},
+	"mixins": [
+		"eighthfabricmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
